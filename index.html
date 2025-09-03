@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231: Web Frontend Development I Course Home Page - BYU-Idaho">
+  <meta name="author" content="Caleb Jones">
+  <title>WDD 231: Web Frontend Development I</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/larger.css">
+  <script src="js/navigation.js" defer></script>
+  <script src="js/date.js" defer></script>
+  <script src="js/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/byui-logo.svg" alt="BYU-I Logo" class="logo">
+  <span>Caleb Jones</span>
+    <span class="hamburger" aria-label="Open navigation" tabindex="0">&#9776;</span>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>Overview</h2>
+      <p>This assignment demonstrates your prerequisite knowledge by applying HTML, CSS, and JavaScript to the design and development of your course home page.</p>
+    </section>
+    <section>
+      <h2>Task</h2>
+      <ul>
+        <li>Responsive layout for all screen widths</li>
+        <li>Accessibility, best practice, and SEO</li>
+        <li>Dynamic course cards and filtering</li>
+        <li>Optimized images and social links</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Certificate Courses</h2>
+      <div style="margin-bottom:1rem;">
+        <button id="allBtn">All Courses</button>
+        <button id="wddBtn">WDD Courses</button>
+        <button id="cseBtn">CSE Courses</button>
+      </div>
+      <div id="courseCards" class="course-cards"></div>
+      <div id="creditTotal" style="margin-top:1rem;font-weight:bold;"></div>
+    </section>
+  </main>
+  <footer>
+    <div>
+  <a href="https://github.com/Detaai" target="_blank" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height:24px;vertical-align:middle;"></a>
+  <a href="https://www.linkedin.com/in/caleb-jones-jones-ab1706339/" target="_blank" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="height:24px;vertical-align:middle;"></a>
+  <a href="https://linktr.ee/LordofEntine" target="_blank" aria-label="Linktree"><img src="images/linktree.svg" alt="Linktree" style="height:24px;vertical-align:middle;"></a>
+    </div>
+  <p>&copy; <span id="year"></span> Caleb Jones | Kingman, Arizona</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
