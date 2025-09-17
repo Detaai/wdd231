@@ -43,8 +43,7 @@ function createMemberListItem(member) {
 
 async function renderDirectory(view = 'grid') {
   const members = await fetchMembers();
-  const container = document.getElementById('directory');
-  container.className = `directory ${view}`;
+  const container = document.getElementById('members');
   container.innerHTML = '';
   members.forEach(member => {
     const card = view === 'grid' ? createMemberCard(member) : createMemberListItem(member);
@@ -54,16 +53,26 @@ async function renderDirectory(view = 'grid') {
 
 document.addEventListener('DOMContentLoaded', () => {
   renderDirectory('grid');
-  document.getElementById('gridBtn').onclick = function() {
-    this.classList.add('active');
-    document.getElementById('listBtn').classList.remove('active');
+  const gridBtn = document.getElementById('gridView');
+  const listBtn = document.getElementById('listView');
+  function setActive(view) {
+    if (view === 'grid') {
+      gridBtn.classList.add('active');
+      listBtn.classList.remove('active');
+    } else {
+      listBtn.classList.add('active');
+      gridBtn.classList.remove('active');
+    }
+  }
+  gridBtn.onclick = function() {
+    setActive('grid');
     renderDirectory('grid');
   };
-  document.getElementById('listBtn').onclick = function() {
-    this.classList.add('active');
-    document.getElementById('gridBtn').classList.remove('active');
+  listBtn.onclick = function() {
+    setActive('list');
     renderDirectory('list');
   };
+  setActive('grid');
   // Footer JS
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;

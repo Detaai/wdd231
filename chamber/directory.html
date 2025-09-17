@@ -35,7 +35,7 @@
 </head>
 <body>
   <header>
-    <img src="../images/byui-logo.svg" alt="BYU-I Logo" class="logo">
+    <img src="images/byui-logo.svg" alt="BYU-I Logo" class="logo">
     <div class="site-title">
       <span class="site-name">Kingman Chamber of Commerce</span>
       <span class="site-tagline">Connecting Kingman’s Businesses</span>
@@ -45,38 +45,28 @@
   <nav>
   <a href="index.html">Home</a>
   <a href="discover.html">Discover</a>
-  <a href="directory.html">Directory</a>
+  <a href="directory.html" class="active">Directory</a>
   <a href="join.html">Join</a>
-  <a href="#">W1</a>
-  <a href="#">W2</a>
-  <a href="#">W3</a>
-  <a href="#">W4</a>
-  <a href="#">W5</a>
-  <a href="#">W6</a>
-  <a href="#">W7</a>
-  <a href="#">Final</a>
-      <strong>Features:</strong> Grid/List toggle, responsive layout</p>
-    </section>
-    <section>
-      <h2>Directory</h2>
-  <div class="main-controls">
-        <button id="gridBtn" class="active">Grid View</button>
-        <button id="listBtn">List View</button>
-      </div>
-  <div id="directory" class="course-cards"></div>
+  </nav>
+
+  <main>
+    <section class="directory-container">
+      <section class="directory">
+        <h1>Member Directory</h1>
+        <div class="view-toggle">
+          <button id="gridView" aria-label="Grid view">Grid</button>
+          <button id="listView" aria-label="List view">List</button>
+        </div>
+        <div id="members" class="course-cards"></div>
+      </section>
     </section>
   </main>
   <footer>
     <div>
       <a href="https://github.com/Detaai" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
       <a href="https://www.linkedin.com/in/caleb-jones-jones-ab1706339/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-      <a href="https://linktr.ee/LordofEntine" target="_blank" aria-label="Linktree"><img src="../images/linktree.svg" alt="Linktree"></a>
+      <a href="https://linktr.ee/LordofEntine" target="_blank" aria-label="Linktree"><img src="images/linktree.svg" alt="Linktree"></a>
     </div>
     <p>&copy; <span id="year"></span> Caleb Jones | WDD 231 | <a href="mailto:info@kingmanchamber.com">info@kingmanchamber.com</a></p>
     <p id="lastModified"></p>
   </footer>
-  <script>
-    const res = await fetch('data/members.json');
-  </script>
-</body>
-</html>
