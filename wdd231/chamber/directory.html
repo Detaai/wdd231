@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This site is the Chamber of Commerce directory for Kingman, Arizona. It displays local businesses and organizations, including contact info and membership levels. Users can switch between a grid view of member cards or a simple list view. All data is dynamically loaded from a JSON file.">
+  <meta name="author" content="Caleb Jones">
+    <meta name="keywords" content="Kingman, Chamber of Commerce, Arizona, directory, members, business, organizations">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Kingman Chamber of Commerce Directory">
+    <meta property="og:description" content="Browse Kingman Chamber member businesses and organizations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+    <meta property="og:image" content="images/logo-1.png">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXX-X');
+    </script>
+  <title>Kingman Chamber Directory | WDD 231</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Kingman Chamber Directory">
+  <meta property="og:description" content="This site is the Chamber of Commerce directory for Kingman, Arizona. It displays local businesses and organizations, including contact info and membership levels. Users can switch between a grid view of member cards or a simple list view. All data is dynamically loaded from a JSON file.">
+  <meta property="og:image" content="images/byui-logo.svg">
+  <meta property="og:url" content="https://detaai.github.io/wdd231/chamber/directory.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="../images/byui-logo.svg" alt="BYU-I Logo" class="logo">
+    <div class="site-title">
+      <span class="site-name">Kingman Chamber of Commerce</span>
+      <span class="site-tagline">Connecting Kingman’s Businesses</span>
+    </div>
+    <span class="hamburger" aria-label="Open navigation" tabindex="0">&#9776;</span>
+  </header>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="discover.html">Discover</a>
+  <a href="directory.html">Directory</a>
+  <a href="join.html">Join</a>
+  <a href="#">W1</a>
+  <a href="#">W2</a>
+  <a href="#">W3</a>
+  <a href="#">W4</a>
+  <a href="#">W5</a>
+  <a href="#">W6</a>
+  <a href="#">W7</a>
+  <a href="#">Final</a>
+      <strong>Features:</strong> Grid/List toggle, responsive layout</p>
+    </section>
+    <section>
+      <h2>Directory</h2>
+  <div class="main-controls">
+        <button id="gridBtn" class="active">Grid View</button>
+        <button id="listBtn">List View</button>
+      </div>
+  <div id="directory" class="course-cards"></div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="https://github.com/Detaai" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/caleb-jones-jones-ab1706339/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://linktr.ee/LordofEntine" target="_blank" aria-label="Linktree"><img src="../images/linktree.svg" alt="Linktree"></a>
+    </div>
+    <p>&copy; <span id="year"></span> Caleb Jones | WDD 231 | <a href="mailto:info@kingmanchamber.com">info@kingmanchamber.com</a></p>
+    <p id="lastModified"></p>
+  </footer>
+  <script>
+    const res = await fetch('data/members.json');
+  </script>
+</body>
+</html>

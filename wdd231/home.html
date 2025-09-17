@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the course home page for WDD 231: Web Frontend Development I, featuring responsive design, dynamic course cards, and accessibility best practices.">
+  <meta name="author" content="Caleb Jones">
+  <title>WDD 231: Web Frontend Development I</title>
+  <meta property="og:title" content="WDD 231: Web Frontend Development I">
+  <meta property="og:description" content="This is the course home page for WDD 231: Web Frontend Development I, featuring responsive design, dynamic course cards, and accessibility best practices.">
+  <meta property="og:image" content="images/byui-logo.svg">
+  <meta property="og:url" content="https://detaai.github.io/wdd231/index.html">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/larger.css">
+  <script src="js/navigation.js" defer></script>
+  <script src="js/date.js" defer></script>
+  <script src="js/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/byui-logo.svg" alt="BYU-I Logo" class="logo">
+    <div style="display:flex;flex-direction:column;align-items:flex-start;">
+      <span style="font-size:1.5rem;font-weight:bold;">WDD 231: Web Frontend Development I</span>
+      <span style="font-size:1rem;font-style:italic;">Modern Responsive Web Design &amp; Development</span>
+    </div>
+    <span class="hamburger" aria-label="Open navigation" tabindex="0">&#9776;</span>
+  </header>
+  <nav>
+    <a href="chamber/directory.html">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
+  <main>
+    <h1>Course Home Page</h1>
+    <section>
+      <h2>Project Overview</h2>
+      <p>This is the course home page for WDD 231: Web Frontend Development I. It demonstrates responsive design, accessibility, and dynamic content using HTML, CSS, and JavaScript. Users can filter and view required certificate courses, and navigate to other project pages.</p>
+      <p><strong>Course:</strong> WDD 231: Web Frontend Development I<br>
+      <strong>Purpose:</strong> Demonstrate web development skills<br>
+      <strong>Features:</strong> Responsive layout, dynamic course cards, accessibility, SEO</p>
+    </section>
+    <section>
+      <h2>Tasks</h2>
+      <ul>
+        <li>Responsive layout for all screen widths</li>
+        <li>Accessibility, best practice, and SEO</li>
+        <li>Dynamic course cards and filtering</li>
+        <li>Optimized images and social links</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Certificate Courses</h2>
+      <div style="margin-bottom:1rem;">
+        <button id="allBtn">All Courses</button>
+        <button id="wddBtn">WDD Courses</button>
+        <button id="cseBtn">CSE Courses</button>
+      </div>
+      <div id="courseCards" class="course-cards"></div>
+      <div id="creditTotal" style="margin-top:1rem;font-weight:bold;"></div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="https://github.com/Detaai" target="_blank" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height:24px;vertical-align:middle;"></a>
+      <a href="https://www.linkedin.com/in/caleb-jones-jones-ab1706339/" target="_blank" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="height:24px;vertical-align:middle;"></a>
+      <a href="https://linktr.ee/LordofEntine" target="_blank" aria-label="Linktree"><img src="images/linktree.svg" alt="Linktree" style="height:24px;vertical-align:middle;"></a>
+    </div>
+    <p>&copy; <span id="year"></span> Caleb Jones | WDD 231 | <a href="mailto:caleb.jones@email.com" style="color:var(--accent);text-decoration:underline;">caleb.jones@email.com</a></p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
