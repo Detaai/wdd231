@@ -1,3 +1,105 @@
+/* Home page hero section styles */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg,#2a4d69 60%,#f9a825 100%);
+  color: #fff;
+  padding: 2.5rem 1rem 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+.cta-btn {
+  background: #f9a825;
+  color: #2a4d69;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+  display: inline-block;
+}
+.cta-btn:hover, .cta-btn:focus {
+  background: #2a4d69;
+  color: #f9a825;
+}
+/* Home page events section styles */
+.events h2 {
+  color: #2a4d69;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+#events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#events-list li {
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  color: #222;
+  font-size: 1.1rem;
+}
+/* Home page weather section styles */
+.weather h2 {
+  color: #2a4d69;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+#weather-current, #weather-forecast {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  color: #222;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+#weather-forecast {
+  margin-bottom: 0;
+}
+/* Home page spotlights section styles */
+.spotlights h2 {
+  color: #2a4d69;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+#spotlights.course-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
 /* Description text upgrades */
 main p, .description, .course-card p, .overview p, .history p, .demographics p, .events p, .montage p, .join-info p, .membership-levels p, .application-form p {
   font-size: 1.13rem;
