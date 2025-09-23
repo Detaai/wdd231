@@ -4,7 +4,7 @@
     "address": "123 Main St, Kingman, AZ",
     "phone": "(928) 555-1234",
     "website": "https://kingmancoffee.com",
-  "image": "logo-1.png",
+    "image": "logo-1.png",
     "membership": 3,
     "info": "Local coffee shop with community events."
   },
@@ -13,7 +13,7 @@
     "address": "456 Fitness Ave, Kingman, AZ",
     "phone": "(928) 555-5678",
     "website": "https://desertfitness.com",
-  "image": "logo-1.png",
+    "image": "logo-1.png",
     "membership": 2,
     "info": "24/7 gym and personal training."
   },
@@ -22,7 +22,7 @@
     "address": "789 Historic Rd, Kingman, AZ",
     "phone": "(928) 555-9012",
     "website": "https://route66diner.com",
-  "image": "logo-1.png",
+    "image": "logo-1.png",
     "membership": 1,
     "info": "Classic American diner on Route 66."
   },
@@ -31,7 +31,7 @@
     "address": "101 Tech Blvd, Kingman, AZ",
     "phone": "(928) 555-3456",
     "website": "https://mohavetech.com",
-  "image": "logo-1.png",
+    "image": "logo-1.png",
     "membership": 3,
     "info": "IT services and consulting."
   },
@@ -40,7 +40,7 @@
     "address": "202 Art St, Kingman, AZ",
     "phone": "(928) 555-7890",
     "website": "https://kingmanart.com",
-  "image": "logo-1.png",
+    "image": "logo-1.png",
     "membership": 2,
     "info": "Local artists and exhibitions."
   },
@@ -49,7 +49,7 @@
     "address": "303 Realty Ln, Kingman, AZ",
     "phone": "(928) 555-2345",
     "website": "https://desertrealty.com",
-  "image": "logo-1.png",
+    "image": "logo-1.png",
     "membership": 1,
     "info": "Residential and commercial real estate."
   },
@@ -57,9 +57,9 @@
     "name": "Kingman Bookstore",
     "address": "404 Book Ave, Kingman, AZ",
     "phone": "(928) 555-6789",
-    "website": "https://kingmanbooks.com",
+  "website": "https://kingmanbooks.com",
   "image": "logo-1.png",
-    "membership": 2,
+  "membership": 2,
     "info": "Books, gifts, and local authors."
   }
 ]
