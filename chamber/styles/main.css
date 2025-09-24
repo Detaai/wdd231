@@ -1,3 +1,130 @@
+/* Join page custom styles */
+.join-info {
+  background: linear-gradient(120deg,#2a4d69 60%,#f9a825 100%);
+  color: #fff;
+  padding: 2.5rem 1rem 2rem 1rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+.join-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.join-desc {
+  font-size: 1.15rem;
+}
+.join-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.join-benefits li {
+  background: #fff;
+  color: #2a4d69;
+  border-radius: 8px;
+  padding: 0.75rem 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+.membership-levels {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.levels-title {
+  color: #2a4d69;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.levels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.level-card {
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  min-width: 180px;
+  color: #2a4d69;
+}
+.level-nonprofit {
+  background: #cfd8dc;
+}
+.level-silver {
+  background: #f9a825;
+}
+.level-gold {
+  background: #ffd700;
+}
+.level-card h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+}
+.level-card p {
+  margin: 0;
+}
+.application-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.form-title {
+  color: #2a4d69;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.join-form label {
+  font-weight: 600;
+  text-align: left;
+}
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #cfd8dc;
+  font-size: 1rem;
+}
+.join-form textarea {
+  resize: vertical;
+}
+.join-btn {
+  background: #2a4d69;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.join-btn:hover,
+.join-btn:focus {
+  background: #f9a825;
+  color: #2a4d69;
+}
 /* Hamburger menu and mobile nav */
 nav {
   transition: max-height 0.3s;
