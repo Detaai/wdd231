@@ -1,3 +1,15 @@
+/* Membership card entrance animation */
+.card-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardFadeIn 0.7s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Join page custom styles */
 .join-info {
   background: linear-gradient(120deg,#2a4d69 60%,#f9a825 100%);
@@ -624,6 +636,7 @@ main p, .description, .course-card p, .overview p, .history p, .demographics p, 
   padding: 2px 8px;
   margin-top: 0.5rem;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {

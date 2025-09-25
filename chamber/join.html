@@ -10,10 +10,8 @@
   <meta property="og:title" content="Kingman Chamber of Commerce Join">
   <meta property="og:description" content="Join the Kingman Chamber and grow your business.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com/chamber/join.html">
-  <meta property="og:image" content="images/byui-logo.svg">
-  <meta property="og:image" content="images/hero.jpg">
   <meta property="og:url" content="https://detaai.github.io/wdd231/chamber/join.html">
+  <meta property="og:image" content="images/hero.jpg">
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
   <script>
@@ -30,6 +28,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/join-animate.js" defer></script>
 </head>
 <body>
   <header>
@@ -81,20 +80,33 @@
       <form id="joinForm" action="thankyou.html" method="post" class="join-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" required>
+
         <label for="business">Business/Organization:</label>
         <input type="text" id="business" name="business" required>
+
+        <label for="address">Business Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="website">Business Website:</label>
+        <input type="text" id="website" name="website">
+
         <label for="level">Membership Level:</label>
         <select id="level" name="level" required>
+          <option value="" disabled selected>Select a level</option>
           <option value="non-profit">Non-Profit</option>
           <option value="silver">Silver</option>
           <option value="gold">Gold</option>
         </select>
+
         <label for="about">Tell us about your business:</label>
         <textarea id="about" name="about" rows="3"></textarea>
+
         <input type="hidden" name="source" value="join-form">
         <button type="submit" class="join-btn">Apply Now</button>
       </form>
@@ -106,8 +118,12 @@
       <a href="https://www.linkedin.com/in/caleb-jones-jones-ab1706339/" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
       <a href="https://linktr.ee/LordofEntine" target="_blank" aria-label="Linktree"><img src="images/linktree.svg" alt="Linktree"></a>
     </div>
-    <p>&copy; <span id="year"></span> Caleb Jones | WDD 231 | <a href="mailto:info@kingmanchamber.com">info@kingmanchamber.com</a></p>
+  <p>&copy; <span id="year"></span> Caleb Jones | WDD 231 | <a href="mailto:info@kingmanchamber.com">Contact the Kingman Chamber</a></p>
     <p id="lastModified"></p>
+    <section class="fun-gif" style="text-align:center;margin-top:2rem;">
+      <h2 style="font-size:1.3rem;margin-bottom:0.5rem;">Me trying to work on my code</h2>
+      <img src="images/Untitled.gif" alt="Me trying to work on my code gif" style="max-width:350px;width:100%;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.10);">
+    </section>
   </footer>
 </body>
 </html>
