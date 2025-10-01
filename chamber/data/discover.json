@@ -1,0 +1,60 @@
+{
+  "attractions": [
+    {
+      "id": 1,
+      "name": "Historic Route 66 Museum",
+      "address": "120 W Andy Devine Ave, Kingman, AZ 86401",
+      "description": "Explore the fascinating history of the Mother Road with vintage cars, photographs, and memorabilia spanning Route 66's golden age.",
+      "image": "images/route66-museum.webp"
+    },
+    {
+      "id": 2,
+      "name": "Mohave Museum of History & Arts",
+      "address": "400 W Beale St, Kingman, AZ 86401",
+      "description": "Discover local Native American artifacts, mining history, and territorial period exhibits showcasing Kingman's rich cultural heritage.",
+      "image": "images/mohave-museum.webp"
+    },
+    {
+      "id": 3,
+      "name": "Locomotive Park",
+      "address": "330 E Andy Devine Ave, Kingman, AZ 86401",
+      "description": "Family-friendly park featuring a restored 1928 Santa Fe locomotive, playground equipment, and picnic areas perfect for community gatherings.",
+      "image": "images/locomotive-park.webp"
+    },
+    {
+      "id": 4,
+      "name": "Hualapai Mountain Park",
+      "address": "6250 Hualapai Mountain Rd, Kingman, AZ 86401",
+      "description": "Escape to cooler temperatures in this mountain retreat offering hiking trails, camping, and stunning views of the surrounding desert.",
+      "image": "images/hualapai-mountains.webp"
+    },
+    {
+      "id": 5,
+      "name": "Kingman Railroad Depot",
+      "address": "402 E Andy Devine Ave, Kingman, AZ 86401",
+      "description": "Historic depot serving as a visitor center with railroad artifacts, local tourism information, and Route 66 memorabilia.",
+      "image": "images/railroad-depot.webp"
+    },
+    {
+      "id": 6,
+      "name": "Bonelli House",
+      "address": "430 E Spring St, Kingman, AZ 86401",
+      "description": "Victorian-era home turned museum showcasing 1890s frontier life with period furnishings and guided tours available.",
+      "image": "images/bonelli-house.webp"
+    },
+    {
+      "id": 7,
+      "name": "Kingman Area Chamber of Commerce",
+      "address": "120 W Andy Devine Ave, Kingman, AZ 86401",
+      "description": "Your gateway to local business connections, community events, and economic development opportunities in the Kingman region.",
+      "image": "images/chamber-building.webp"
+    },
+    {
+      "id": 8,
+      "name": "Centennial Park",
+      "address": "1001 Gates Ave, Kingman, AZ 86401",
+      "description": "Modern recreational facility with sports fields, walking trails, splash pad, and event spaces for community celebrations and activities.",
+      "image": "images/centennial-park.webp"
+    }
+  ]
+}

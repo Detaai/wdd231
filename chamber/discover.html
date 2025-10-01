@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
 </head>
 <body>
   <header>
@@ -45,39 +46,37 @@
   <a href="directory.html">Directory</a>
   <a href="join.html">Join</a>
   </nav>
-  <main>
-    <section class="overview">
+  <main class="discover-main">
+    <section class="hero">
       <h1>Discover Kingman</h1>
       <p>Explore the rich history, vibrant community, and beautiful sites of Kingman, Arizona.</p>
+      <div id="visitor-message" class="visitor-message"></div>
     </section>
-    <section class="history">
-      <h2>History</h2>
-      <p>Kingman was founded in the late 1800s as a railroad town and has grown into a hub for travelers and businesses in northwest Arizona.</p>
-    </section>
-    <section class="demographics">
-      <h2>Demographics</h2>
-      <ul>
-        <li>Population: 32,689</li>
-        <li>Median Age: 44</li>
-        <li>Major Industries: Tourism, Manufacturing, Retail</li>
-      </ul>
-    </section>
-    <section class="events">
-      <h2>Current Events</h2>
-      <ul>
-        <li>Kingman Street Fair – Sept 25</li>
-        <li>Historic Route 66 Parade – Oct 10</li>
-        <li>Community Clean-Up – Oct 18</li>
-      </ul>
-    </section>
-    <section class="montage">
-      <h2>Image Montage</h2>
-      <div class="montage-grid">
-        <img src="images/site1.jpg" alt="Historic Downtown">
-        <img src="images/site2.jpg" alt="Route 66 Sign">
-        <img src="images/site3.jpg" alt="Desert Landscape">
-        <img src="images/site4.jpg" alt="Local Park">
+    
+    <section class="sidebar">
+      <div class="info-card">
+        <h2>Quick Facts</h2>
+        <ul>
+          <li><strong>Population:</strong> 32,689</li>
+          <li><strong>Founded:</strong> 1882</li>
+          <li><strong>Elevation:</strong> 3,336 ft</li>
+          <li><strong>Climate:</strong> High Desert</li>
+        </ul>
       </div>
+      
+      <div class="info-card">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>Historic Route 66 Festival</li>
+          <li>Kingman Art Walk</li>
+          <li>Chamber Mixer</li>
+          <li>Desert Discovery Tour</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="attractions-grid" id="attractions-container">
+      <!-- Cards will be dynamically populated by JavaScript -->
     </section>
   </main>
   <footer>
